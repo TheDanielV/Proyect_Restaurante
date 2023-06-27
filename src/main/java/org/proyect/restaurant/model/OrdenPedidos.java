@@ -4,8 +4,8 @@ public class OrdenPedidos {
 	private int id;
 	private Cliente client;
 	private Pedido pedido;
-	public void generarOrden() {
-			
+
+	public OrdenPedidos() {
 	}
 
 	public void setClient(Cliente client) {
@@ -31,4 +31,8 @@ public class OrdenPedidos {
 	public Pedido getPedido() {
 		return pedido;
 	}
+	public void generarOrden() {
+
+	}
+
 }

@@ -1,18 +1,19 @@
 package org.proyect.restaurant.model;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.PrintWriter;
+
+import java.sql.SQLException;
 import java.util.Scanner;
+import org.proyect.restaurant.conection.*;
 
 public class Admin {
     Cliente cliente;
     Pedido pedido = new Pedido();
     Factura factur;
     Validacion validador;
-
+    DbConection conection = new DbConection();
 
     public Admin() {
+        conection.begginConection();
     }
 
     public void setClient(Cliente client) {
@@ -20,7 +21,7 @@ public class Admin {
     }
 
 
-    public void registrarCliente() {
+    public void registrarCliente() throws SQLException {
         Cliente client = new Cliente();
         String id = "";
         String nombre = "", apellido = "";
@@ -34,7 +35,6 @@ public class Admin {
             id = cedulaIn.nextLine();
             // verificar el nombre ingresado
             if (validador.validarCedula(id)) {
-                System.out.println(id);
                 client.setCedula(id);
                 flag = false;
             } else {
@@ -115,11 +115,11 @@ public class Admin {
             }
         }
 
-        System.out.println("\n"+client.getNombre());
+        System.out.println("\n");
 
         this.cliente = client;
 
-
+        conection.registroCliente(cliente);
        /* File fichero = null;
         FileWriter fw = null;
         PrintWriter pw = null;

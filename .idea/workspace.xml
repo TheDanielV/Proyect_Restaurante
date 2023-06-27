@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50fdefd2-6c09-42e0-974c-e9a21b07c75d" name="Changes" comment="Validaci[on y registro de cliente">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="50fdefd2-6c09-42e0-974c-e9a21b07c75d" name="Changes" comment="Validacion y registro de cliente">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Factura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Factura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Pedido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/OrdenPedidos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/OrdenPedidos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +30,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="2RkFauLYaJ5lUOuzddom0Es8Dxg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -38,26 +38,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Sistema__Restaurante",
-    "last_opened_file_path": "C:/Users/danie/OneDrive/Documentos/Metodologías ágiles/Proyect_Restaurante/src/main/java/org/proyect/restaurant/model",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Sistema__Restaurante&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/danie/OneDrive/Documentos/Metodologías ágiles/Proyect_Restaurante/src/main/java/org/proyect/restaurant/model&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\danie\OneDrive\Documentos\Metodologías ágiles\Proyect_Restaurante\src\main\java\org\proyect\restaurant\model" />
@@ -94,6 +94,7 @@
       <workItem from="1687786242040" duration="768000" />
       <workItem from="1687807356050" duration="5162000" />
       <workItem from="1687820223654" duration="2737000" />
+      <workItem from="1687827240863" duration="2393000" />
     </task>
     <task id="LOCAL-00001" summary="Validaci[on y registro de cliente">
       <created>1687812519271</created>
@@ -102,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687812519271</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Validacion y registro de cliente">
+      <created>1687827292987</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687827292987</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +118,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Validaci[on y registro de cliente" />
-    <option name="LAST_COMMIT_MESSAGE" value="Validaci[on y registro de cliente" />
+    <MESSAGE value="Validacion y registro de cliente" />
+    <option name="LAST_COMMIT_MESSAGE" value="Validacion y registro de cliente" />
   </component>
 </project>
