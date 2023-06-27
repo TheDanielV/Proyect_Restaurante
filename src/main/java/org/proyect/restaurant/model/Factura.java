@@ -15,6 +15,7 @@ public class Factura {
     }
     public void emitirFactura(){
         System.out.println("Los datos de su factura son:");
+        System.out.println("Factura No: "+ pedido.getId());
         System.out.println("Nombres: "+ customer.getNombre()+" "+customer.getApellido());
         System.out.println("cedula de identidad: "+customer.getCedula());
         System.out.println("Productos pedidos: ");

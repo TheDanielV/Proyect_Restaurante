@@ -116,11 +116,11 @@ public class DbConection {
                 return maxId;
             } else {
                 System.out.println("No se encontraron registros en la tabla.");
-                return 0;
+                return 1;
             }
         } catch (SQLException e) {
             System.out.println("Error al obtener el Id: " + e.getMessage());
-            return 0;
+            return 1;
         }
 
     }

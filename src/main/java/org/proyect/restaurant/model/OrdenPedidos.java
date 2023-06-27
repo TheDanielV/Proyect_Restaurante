@@ -31,8 +31,13 @@ public class OrdenPedidos {
 	public Pedido getPedido() {
 		return pedido;
 	}
-	public void generarOrden() {
 
+
+	public void emitirOrden(Pedido pedido) {
+		System.out.println("Platos a preparar:");
+		for (int i = 0; i < pedido.getListaProducto().size(); i++){
+			System.out.println("Tipo: " + pedido.getListaProducto().get(i).getNombre() + ", Cantidad: " + pedido.getListaProducto().get(i).getCantidad() );
+		}
+		System.out.println("A la mesa: " + pedido.getmesa());
 	}
-
 }

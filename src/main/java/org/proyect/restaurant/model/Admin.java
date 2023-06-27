@@ -11,7 +11,7 @@ public class Admin {
     Factura factur;
     Producto producto = new Producto();
     Validacion validador;
-
+    OrdenPedidos orden = new OrdenPedidos();
     DbConection conection = new DbConection();
 
     public Admin() {
@@ -162,6 +162,7 @@ public class Admin {
     public void emitirDocumentos(){
         factur = new Factura(cliente, pedido);
         factur.emitirFactura();
+        orden.emitirOrden(pedido);
 
     }
     public void tommarPedido() throws SQLException {
@@ -182,6 +183,8 @@ public class Admin {
                 }else{
                     flag = false;
                     pedido.setId(conection.getPedidoId()+1);
+                    System.out.print("Ingresar la mesa del pedido: ");  //************************** Aqui se ingresa en numero de mesa***********************************************/
+                    pedido.setmesa(in.nextInt());
                     conection.registroPedido(pedido);
                 }
             }else{

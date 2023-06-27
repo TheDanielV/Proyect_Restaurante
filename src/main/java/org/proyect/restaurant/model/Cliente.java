@@ -10,14 +10,6 @@ public class Cliente {
 	private String telefono;
 	private String correo;
 
-	public Cliente(String nombre, String apellido, String direccion, String cedula, String telefono, String correo) {
-		this.nombre = nombre;
-		this.apellido = apellido;
-		this.direccion = direccion;
-		this.cedula = cedula;
-		this.telefono = telefono;
-		this.correo = correo;
-	}
 	public Cliente(){
 	}
 

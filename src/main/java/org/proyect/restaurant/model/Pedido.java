@@ -78,4 +78,12 @@ public class Pedido {
 	public void setId(int i) {
 		this.id = i;
 	}
+
+	public void setmesa(int i) {
+		this.mesa = i;
+	}
+
+	public int getmesa() {
+		return this.mesa;
+	}
 }
