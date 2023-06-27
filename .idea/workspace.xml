@@ -69,7 +69,7 @@
       <recent name="C:\Users\danie\OneDrive\Documentos\Metodologías ágiles\Proyect_Restaurante\src\main\java\org\proyect\restaurant\model" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ValidacionTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.proyect.restaurant.main.Main" />
       <module name="proyect-restaurant" />
@@ -83,8 +83,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ValidacionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proyect-restaurant" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.proyect.restaurant.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.proyect.restaurant.model" />
+      <option name="MAIN_CLASS_NAME" value="org.proyect.restaurant.model.ValidacionTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ValidacionTest" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
