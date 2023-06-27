@@ -15,13 +15,13 @@ public class Factura {
     }
     public void emitirFactura(){
         System.out.println("Los datos de su factura son:");
-        System.out.println("Nombres: "+ customer.getNombre()+" "+customer.getApellido());
-        System.out.println("cedula de identidad: "+customer.getCedula());
+        /*System.out.println("Nombres: "+ customer.getNombre()+" "+customer.getApellido());
+        System.out.println("cedula de identidad: "+customer.getCedula());*/
         System.out.println("Productos pedidos: ");
         for (int i = 0; i < pedido.getListaProducto().size(); i++ ){
             System.out.println(pedido.getListaProducto().get(i).getNombre()+", " + "x"+pedido.getListaProducto().get(i).getCantidad());
         }
-
+        System.out.println("Total: "+pedido.getSubtotal());
     }
     public  double calcularTotal(Pedido pedido) {
     	

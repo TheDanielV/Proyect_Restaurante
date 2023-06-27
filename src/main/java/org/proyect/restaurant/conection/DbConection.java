@@ -39,15 +39,13 @@ public class DbConection {
         }
     }
     public void registroProducto(Producto producto){
-        String consulta = "INSERT INTO producto (cedula,Nombre,Apellido,Direccion,Correo,Telefono) VALUES (?,?,?,?,?,?)";
+        String consulta = "INSERT INTO producto (id,Nombre,Precio) VALUES (?,?,?)";
         try (PreparedStatement preparedStatement = connection.prepareStatement(consulta)) {
             // Establecer los valores de los parámetros
-            preparedStatement.setString(1, producto.getCedula());
+            preparedStatement.setInt(1, producto.getId());
             preparedStatement.setString(2, producto.getNombre());
-            preparedStatement.setString(3, producto.getApellido());
-            preparedStatement.setString(4, producto.getDireccion());
-            preparedStatement.setString(5, producto.getCorreo());
-            preparedStatement.setString(6, producto.getTelefono());
+            preparedStatement.setDouble(3, producto.getPrecio());
+
 
             // Ejecutar la consulta
             preparedStatement.executeUpdate();

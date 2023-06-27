@@ -9,7 +9,9 @@ public class Admin {
     Cliente cliente;
     Pedido pedido = new Pedido();
     Factura factur;
+    Producto producto = new Producto();
     Validacion validador;
+
     DbConection conection = new DbConection();
 
     public Admin() {
@@ -151,9 +153,6 @@ public class Admin {
 
 
 
-    public Cliente getClient() {
-        return cliente;
-    }
 
     public void emitirDocumentos(){
         factur = new Factura(cliente, pedido);
@@ -179,5 +178,11 @@ public class Admin {
                 System.out.print("El producto no existe, ingrese otro ");
             }
         }
+    }
+    public void ingresarProducto(int id, String nombre, double precio){
+        producto.setId(id);
+        producto.setNombre(nombre);
+        producto.setPrecio(precio);
+        conection.registroProducto(producto);
     }
 }
