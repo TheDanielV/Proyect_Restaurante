@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Admin {
     Cliente cliente;
-    Pedido pedido;
+    Pedido pedido = new Pedido();
     Factura factur;
     Validacion validador;
 
@@ -120,7 +120,7 @@ public class Admin {
         this.cliente = client;
 
 
-        File fichero = null;
+       /* File fichero = null;
         FileWriter fw = null;
         PrintWriter pw = null;
         String cadena = "";
@@ -146,7 +146,7 @@ public class Admin {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        }
+        }*/
     }
 
 
@@ -162,5 +162,22 @@ public class Admin {
     }
     public void tommarPedido(){
 
+        boolean flag = true;
+        while (flag) {
+            System.out.print("Ingrese el producto: ");
+            Scanner in = new Scanner(System.in);
+            String product = in.nextLine();
+
+            // verificar el nombre ingresado
+            if (pedido.agregarPedido(product,1)){
+                System.out.print("Agregar otro prodducto? s/n");
+                if (in.nextLine().equals("s")){
+                }else{
+                    flag = false;
+                }
+            }else{
+                System.out.print("El producto no existe, ingrese otro ");
+            }
+        }
     }
 }
