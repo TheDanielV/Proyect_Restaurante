@@ -38,6 +38,39 @@ public class DbConection {
             System.out.println("Error al Registrar al cliente: " + e.getMessage());
         }
     }
+    public Cliente getCliente(String cedula){
+        Cliente cliente = new Cliente();
+
+        String consulta = "SELECT Nombre, Apellido, Direccion, Correo,Telefono FROM cliente WHERE cedula = ?";
+        try (PreparedStatement preparedStatement = connection.prepareStatement(consulta)) {
+            preparedStatement.setString(1, cedula);
+
+            try (ResultSet resultSet = preparedStatement.executeQuery()) {
+                if (resultSet.next()) {
+                    String nombre = resultSet.getString("Nombre");
+                    String apellido = resultSet.getString("Apellido");
+                    String direccion = resultSet.getString("Direccion");
+                    String correo = resultSet.getString("Correo");
+                    String telefono = resultSet.getString("Telefono");
+
+                    // Crear un objeto Cliente y asignar los valores
+
+                    cliente.setCedula(cedula);
+                    cliente.setNombre(nombre);
+                    cliente.setApellido(apellido);
+                    cliente.setDireccion(direccion);
+                    cliente.setCorreo(correo);
+                    cliente.setTelefono(telefono);
+
+                } else {
+                    System.out.println("No se encontró el cliente con ID " + cedula);
+                }
+            }
+        } catch (SQLException e) {
+            System.out.println("Error al obtener el cliente: " + e.getMessage());
+        }
+        return cliente;
+    }
     public void registroProducto(Producto producto){
         String consulta = "INSERT INTO producto (id,Nombre,Precio) VALUES (?,?,?)";
         try (PreparedStatement preparedStatement = connection.prepareStatement(consulta)) {
@@ -55,8 +88,106 @@ public class DbConection {
             System.out.println("Error al ingresar el Producto: " + e.getMessage());
         }
     }
+    public void registroPedido(Pedido pedido) {
+        String consulta = "INSERT INTO pedido (id,producto,cantidad,cedula) VALUES (?,?,?,?)";
+        try (PreparedStatement preparedStatement = connection.prepareStatement(consulta)) {
+            // Establecer los valores de los parámetros
+            preparedStatement.setInt(1, pedido.getId());
+            preparedStatement.setString(2, pedido.getListaProductoString());
+            preparedStatement.setInt(3, pedido.getCantidad());
+            preparedStatement.setString(4, pedido.getCedula());
+
+
+            // Ejecutar la consulta
+            preparedStatement.executeUpdate();
+
+            System.out.println("Producto ingresado correctamente.");
+        } catch (SQLException e) {
+            System.out.println("Error al ingresar el Producto: " + e.getMessage());
+        }
+    }
+    public int getPedidoId() {
+        String consulta = "SELECT MAX(id) AS max_id FROM pedido";
+
+        try (Statement statement = connection.createStatement();
+             ResultSet resultSet = statement.executeQuery(consulta)) {
+            if (resultSet.next()) {
+                int maxId = resultSet.getInt("max_id");
+                return maxId;
+            } else {
+                System.out.println("No se encontraron registros en la tabla.");
+                return 0;
+            }
+        } catch (SQLException e) {
+            System.out.println("Error al obtener el Id: " + e.getMessage());
+            return 0;
+        }
+
+    }
+    public Producto getProducto(String nombre, int cantidad){
+        Producto producto = new Producto();
+
+        String consulta = "SELECT id,Precio FROM producto WHERE Nombre = ?";
+        try (PreparedStatement preparedStatement = connection.prepareStatement(consulta)) {
+            preparedStatement.setString(1, nombre);
+
+            try (ResultSet resultSet = preparedStatement.executeQuery()) {
+                if (resultSet.next()) {
+                    int id = resultSet.getInt("id");
+                    double precio = resultSet.getDouble("Precio");
+
+
+                    // Crear un objeto Cliente y asignar los valores
+
+                    producto.setId(id);
+                    producto.setNombre(nombre);
+                    producto.setPrecio(precio);
+                    producto.setCantidad(cantidad);
+
+
+                } else {
+                    System.out.println("No se encontró el producto " + nombre);
+                }
+            }
+        } catch (SQLException e) {
+            System.out.println("Error al obtener el producto: " + e.getMessage());
+        }
+        return producto;
+    }
+
     public void finishConection() throws SQLException {
         connection.close();
     }
+
+    public boolean existecliente(String cedula) throws SQLException {
+        String consulta = "SELECT Nombre, Correo FROM cliente WHERE cedula = ?";
+        try (PreparedStatement preparedStatement = connection.prepareStatement(consulta)) {
+            preparedStatement.setString(1, cedula);
+            try (ResultSet resultSet = preparedStatement.executeQuery()) {
+                if (resultSet.next()) {
+                    return false;
+
+                } else {
+                    return true;
+                }
+            }
+        }
+    }
+    public boolean existeProducto(String nombre) throws SQLException {
+        String consulta = "SELECT id,Precio FROM producto WHERE Nombre = ?";
+        try (PreparedStatement preparedStatement = connection.prepareStatement(consulta)) {
+            preparedStatement.setString(1, nombre);
+            try (ResultSet resultSet = preparedStatement.executeQuery()) {
+                if (resultSet.next()) {
+                    return true;
+
+                } else {
+                    return false;
+                }
+            }
+        }
+    }
+
+
 }
 

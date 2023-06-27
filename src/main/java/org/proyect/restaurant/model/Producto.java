@@ -1,5 +1,9 @@
 package org.proyect.restaurant.model;
 
+import org.proyect.restaurant.conection.DbConection;
+
+import java.sql.SQLException;
+
 public class Producto {
 
     private int id;
@@ -51,11 +55,11 @@ public class Producto {
         this.cantidad = cantidad;
     }
 
-    public Producto getProdcuto(String producto, int cantidad) {
-        return new Producto(001, "Hamburgusas", 2, cantidad);
+    public Producto getProdcuto(String producto, int cantidad, DbConection conection) {
+        return conection.getProducto(producto, cantidad);
     }
 
-    public boolean validarExistencia(String producto) {
-        return true;
+    public boolean validarExistencia(String producto, DbConection conection) throws SQLException {
+        return conection.existeProducto(producto);
     }
 }

@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50fdefd2-6c09-42e0-974c-e9a21b07c75d" name="Changes" comment="Database conection and Client Register to database">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e6772950-e01e-4d1a-bc11-90f4d9c76f1b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e6772950-e01e-4d1a-bc11-90f4d9c76f1b.xml" afterDir="false" />
+    <list default="true" id="50fdefd2-6c09-42e0-974c-e9a21b07c75d" name="Changes" comment="Product db">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/conection/DbConection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/conection/DbConection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Admin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Factura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Factura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Producto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +33,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2RkFauLYaJ5lUOuzddom0Es8Dxg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -96,7 +99,7 @@
       <workItem from="1687786242040" duration="768000" />
       <workItem from="1687807356050" duration="5162000" />
       <workItem from="1687820223654" duration="2737000" />
-      <workItem from="1687827240863" duration="5033000" />
+      <workItem from="1687827240863" duration="11334000" />
     </task>
     <task id="LOCAL-00001" summary="Validaci[on y registro de cliente">
       <created>1687812519271</created>
@@ -119,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687829993470</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Product db">
+      <created>1687832834895</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687832834895</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +139,7 @@
     <MESSAGE value="Validaci[on y registro de cliente" />
     <MESSAGE value="Validacion y registro de cliente" />
     <MESSAGE value="Database conection and Client Register to database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Database conection and Client Register to database" />
+    <MESSAGE value="Product db" />
+    <option name="LAST_COMMIT_MESSAGE" value="Product db" />
   </component>
 </project>
