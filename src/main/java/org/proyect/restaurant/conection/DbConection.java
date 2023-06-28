@@ -10,7 +10,7 @@ public class DbConection {
     public void begginConection(){
 
         try {
-            String url = "jdbc:mysql://localhost:3306/bdrestaurante";
+            String url = "jdbc:mysql://172.23.0.3:3306/bdrestaurante";
             String username = "root";
             String password = "root";
             connection = DriverManager.getConnection(url, username, password);
