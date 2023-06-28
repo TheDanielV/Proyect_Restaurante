@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50fdefd2-6c09-42e0-974c-e9a21b07c75d" name="Changes" comment="Validation test: Ingreso Producto">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/proyect/restaurant/model/AdminTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/proyect/restaurant/model/AdminTest.java" afterDir="false" />
+    <list default="true" id="50fdefd2-6c09-42e0-974c-e9a21b07c75d" name="Changes" comment="Target commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +62,7 @@
       <recent name="C:\Users\danie\OneDrive\Documentos\Metodologías ágiles\Proyect_Restaurante\src\main\java\org\proyect\restaurant\model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AdminTest.given_product_when_it_exists_then_accept">
+  <component name="RunManager" selected="Docker.database">
     <configuration name="AdminTest.given_client_data_when_its_into_sistem_then_its_saved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proyect-restaurant" />
       <extension name="coverage">
@@ -143,6 +142,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="database" type="docker-deploy" factoryName="docker-image" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="mysql" />
+          <option name="containerName" value="mySQL_database" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.database" />
+      <item itemvalue="JUnit.AdminTest.given_client_data_when_its_into_sistem_then_its_saved" />
+      <item itemvalue="JUnit.AdminTest.given_product_name_when_it_exists_then_accept" />
+      <item itemvalue="JUnit.AdminTest.given_product_when_it_exists_then_accept" />
+      <item itemvalue="JUnit.AdminTest.testRegistrarCliente" />
+      <item itemvalue="JUnit.ValidacionTest" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.AdminTest.given_product_when_it_exists_then_accept" />
@@ -165,7 +181,7 @@
       <workItem from="1687807356050" duration="5162000" />
       <workItem from="1687820223654" duration="2737000" />
       <workItem from="1687827240863" duration="13146000" />
-      <workItem from="1687914790089" duration="3419000" />
+      <workItem from="1687914790089" duration="4559000" />
     </task>
     <task id="LOCAL-00001" summary="Validaci[on y registro de cliente">
       <created>1687812519271</created>
@@ -216,7 +232,28 @@
       <option name="project" value="LOCAL" />
       <updated>1687917904316</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Validation test: Ingreso Producto">
+      <created>1687918365802</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1687918365802</updated>
+    </task>
+    <task id="LOCAL-00009" summary="actualization">
+      <created>1687918491686</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1687918491686</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Target commit">
+      <created>1687918517572</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1687918517572</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +266,8 @@
     <MESSAGE value="Product db" />
     <MESSAGE value="BdConection actualizado&#10;Pedido - actualizado&#10;Admin - agrega el pedido a la db" />
     <MESSAGE value="Validation test: Ingreso Producto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Validation test: Ingreso Producto" />
+    <MESSAGE value="actualization" />
+    <MESSAGE value="Target commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Target commit" />
   </component>
 </project>
