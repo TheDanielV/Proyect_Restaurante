@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50fdefd2-6c09-42e0-974c-e9a21b07c75d" name="Changes" comment="Validation test">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e6772950-e01e-4d1a-bc11-90f4d9c76f1b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e6772950-e01e-4d1a-bc11-90f4d9c76f1b.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/conection/DbConection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/conection/DbConection.java" afterDir="false" />
+    <list default="true" id="50fdefd2-6c09-42e0-974c-e9a21b07c75d" name="Changes" comment="Validation test: Ingreso Producto">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/proyect/restaurant/model/AdminTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/proyect/restaurant/model/AdminTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +165,7 @@
       <workItem from="1687807356050" duration="5162000" />
       <workItem from="1687820223654" duration="2737000" />
       <workItem from="1687827240863" duration="13146000" />
-      <workItem from="1687914790089" duration="3014000" />
+      <workItem from="1687914790089" duration="3419000" />
     </task>
     <task id="LOCAL-00001" summary="Validaci[on y registro de cliente">
       <created>1687812519271</created>
@@ -205,7 +202,21 @@
       <option name="project" value="LOCAL" />
       <updated>1687839617238</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Validation test: Ingreso Producto">
+      <created>1687917884601</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1687917884601</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Validation test: Ingreso Producto">
+      <created>1687917904316</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1687917904316</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,21 +228,7 @@
     <MESSAGE value="Database conection and Client Register to database" />
     <MESSAGE value="Product db" />
     <MESSAGE value="BdConection actualizado&#10;Pedido - actualizado&#10;Admin - agrega el pedido a la db" />
-    <option name="LAST_COMMIT_MESSAGE" value="BdConection actualizado&#10;Pedido - actualizado&#10;Admin - agrega el pedido a la db" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/org/proyect/restaurant/model/AdminTest.java</url>
-          <line>30</line>
-          <properties class="org.proyect.restaurant.model.AdminTest" method="given_product_when_it_exists_then_accept">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Validation test: Ingreso Producto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Validation test: Ingreso Producto" />
   </component>
 </project>

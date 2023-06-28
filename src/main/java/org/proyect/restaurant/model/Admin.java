@@ -6,13 +6,13 @@ import java.util.Scanner;
 import org.proyect.restaurant.conection.*;
 
 public class Admin {
-    Cliente cliente;
-    Pedido pedido = new Pedido();
-    Factura factur;
-    Producto producto = new Producto();
-    Validacion validador;
-    OrdenPedidos orden = new OrdenPedidos();
-    DbConection conection = new DbConection();
+    private Cliente cliente;
+    private Pedido pedido = new Pedido();
+    private Factura factur;
+    private Producto producto = new Producto();
+    private Validacion validador;
+    private OrdenPedidos orden = new OrdenPedidos();
+    private DbConection conection = new DbConection();
 
     public Admin() {
         conection.begginConection();
@@ -28,6 +28,10 @@ public class Admin {
 
     public Pedido getPedido() {
         return pedido;
+    }
+
+    public DbConection getConection() {
+        return conection;
     }
 
     public void registrarCliente() throws SQLException {

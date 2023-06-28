@@ -30,7 +30,7 @@ public class AdminTest{
     public void given_product_when_it_exists_then_accept() throws SQLException {
         Admin admin = new Admin();
         admin.ingresarProducto(3,"Salchipapa",1.00);
-        Assert.assertTrue(new Producto().validarExistencia("Salchipapa",admin.conection));
+        Assert.assertTrue(new Producto().validarExistencia("Salchipapa",admin.getConection()));
         admin.eliminarProducto(3);
     }
 }
