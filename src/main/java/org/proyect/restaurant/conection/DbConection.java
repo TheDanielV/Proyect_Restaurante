@@ -10,16 +10,16 @@ public class DbConection {
     public void begginConection(){
 
         try {
-            String url = "jdbc:mysql://sql10.freemysqlhosting.net:3306/sql10629153";
-            String username = "sql10629153";
-            String password = "SsFJQf3cqH";
+            String url = "jdbc:mysql://localhost:3306/bdrestaurante";
+            String username = "root";
+            String password = "";
             connection = DriverManager.getConnection(url, username, password);
             System.out.println("Conexión exitosa");
         } catch (SQLException e) {
             System.out.println("Error al conectar a la base de datos: " + e.getMessage());
         }
     }
-    public void registroCliente(Cliente cliente) throws SQLException {
+    public void registroCliente(Cliente cliente) {
         String consulta = "INSERT INTO cliente (cedula,Nombre,Apellido,Direccion,Correo,Telefono) VALUES (?,?,?,?,?,?)";
         try (PreparedStatement preparedStatement = connection.prepareStatement(consulta)) {
             // Establecer los valores de los parámetros
@@ -112,8 +112,7 @@ public class DbConection {
         try (Statement statement = connection.createStatement();
              ResultSet resultSet = statement.executeQuery(consulta)) {
             if (resultSet.next()) {
-                int maxId = resultSet.getInt("max_id");
-                return maxId;
+                return resultSet.getInt("max_id");
             } else {
                 System.out.println("No se encontraron registros en la tabla.");
                 return 1;
@@ -155,21 +154,12 @@ public class DbConection {
         return producto;
     }
 
-    public void finishConection() throws SQLException {
-        connection.close();
-    }
-
     public boolean existecliente(String cedula) throws SQLException {
         String consulta = "SELECT Nombre, Correo FROM cliente WHERE cedula = ?";
         try (PreparedStatement preparedStatement = connection.prepareStatement(consulta)) {
             preparedStatement.setString(1, cedula);
             try (ResultSet resultSet = preparedStatement.executeQuery()) {
-                if (resultSet.next()) {
-                    return false;
-
-                } else {
-                    return true;
-                }
+                return !resultSet.next();
             }
         }
     }
@@ -178,18 +168,13 @@ public class DbConection {
         try (PreparedStatement preparedStatement = connection.prepareStatement(consulta)) {
             preparedStatement.setString(1, nombre);
             try (ResultSet resultSet = preparedStatement.executeQuery()) {
-                if (resultSet.next()) {
-                    return true;
-
-                } else {
-                    return false;
-                }
+                return resultSet.next();
             }
         }
     }
 
 
-    public void removeProducto(int i) throws SQLException {
+    public void removeProducto(int i) {
         String consulta = "DELETE FROM producto WHERE id = ?";
 
         try (PreparedStatement statement = connection.prepareStatement(consulta)) {

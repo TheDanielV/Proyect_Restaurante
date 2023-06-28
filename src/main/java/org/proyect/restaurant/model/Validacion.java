@@ -65,10 +65,6 @@ public class Validacion {
 			return (suma % 10 == 0 && cedula.charAt(cedula.length() - 1) == '0');
 	}
 
-	private static boolean validarDigitos(String entrada) {
-		return entrada.matches("0\\d{9}\"");
-	}
-
 	public static boolean validarCorreoElectronico(String correo) {
 		return correo.matches(patronCorreo);
 	}

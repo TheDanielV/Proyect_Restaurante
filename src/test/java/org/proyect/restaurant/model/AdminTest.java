@@ -1,6 +1,5 @@
 package org.proyect.restaurant.model;
 
-import junit.framework.TestCase;
 import org.junit.Test;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

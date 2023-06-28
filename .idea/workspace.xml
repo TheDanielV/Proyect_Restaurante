@@ -4,7 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50fdefd2-6c09-42e0-974c-e9a21b07c75d" name="Changes" comment="Database Server" />
+    <list default="true" id="50fdefd2-6c09-42e0-974c-e9a21b07c75d" name="Changes" comment="Database Server">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/conection/DbConection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/conection/DbConection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Factura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Factura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/IAdmin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Validacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Validacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/proyect/restaurant/model/AdminTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/proyect/restaurant/model/AdminTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/proyect/restaurant/model/ValidacionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/proyect/restaurant/model/ValidacionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/proyect/restaurant/conection/DbConection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/proyect/restaurant/conection/DbConection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/proyect/restaurant/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/proyect/restaurant/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/proyect/restaurant/model/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/proyect/restaurant/model/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/proyect/restaurant/model/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/proyect/restaurant/model/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/proyect/restaurant/model/Factura.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/proyect/restaurant/model/Factura.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/proyect/restaurant/model/IAdmin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/proyect/restaurant/model/OrdenPedidos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/proyect/restaurant/model/OrdenPedidos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/proyect/restaurant/model/Pedido.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/proyect/restaurant/model/Pedido.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/proyect/restaurant/model/Producto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/proyect/restaurant/model/Producto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/proyect/restaurant/model/Validacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/proyect/restaurant/model/Validacion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/proyect/restaurant/model/AdminTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/proyect/restaurant/model/AdminTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/proyect/restaurant/model/ValidacionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/proyect/restaurant/model/ValidacionTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,7 +53,7 @@
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2RkFauLYaJ5lUOuzddom0Es8Dxg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -35,26 +61,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Sistema__Restaurante&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/danie/OneDrive/Documentos/Metodologías ágiles/Proyect_Restaurante/src/main/java/org/proyect/restaurant/model&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Sistema__Restaurante",
+    "last_opened_file_path": "C:/Users/danie/OneDrive/Documentos/Metodologías ágiles/Proyect_Restaurante/src/main/java/org/proyect/restaurant/model",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.14760147",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\danie\OneDrive\Documentos\Metodologías ágiles\Proyect_Restaurante\src\main\java\org\proyect\restaurant\model" />
@@ -62,6 +93,11 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\danie\OneDrive\Documentos\Metodologías ágiles\Proyect_Restaurante" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn -X" />
+    </option>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -77,7 +113,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AdminTest.given_product_name_when_it_exists_then_accept" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AdminTest.given_client_data_when_its_into_sistem_then_its_saved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proyect-restaurant" />
       <extension name="coverage">
         <pattern>
@@ -87,7 +123,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.proyect.restaurant.model" />
       <option name="MAIN_CLASS_NAME" value="org.proyect.restaurant.model.AdminTest" />
-      <option name="METHOD_NAME" value="given_product_name_when_it_exists_then_accept" />
+      <option name="METHOD_NAME" value="given_client_data_when_its_into_sistem_then_its_saved" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -109,45 +145,57 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ValidacionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proyect-restaurant" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.proyect.restaurant.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.proyect.restaurant.model" />
+      <option name="MAIN_CLASS_NAME" value="org.proyect.restaurant.model.ValidacionTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ValidacionTest.give_cedula_when_validate_correct_then" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proyect-restaurant" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.proyect.restaurant.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.proyect.restaurant.model" />
+      <option name="MAIN_CLASS_NAME" value="org.proyect.restaurant.model.ValidacionTest" />
+      <option name="METHOD_NAME" value="give_cedula_when_validate_correct_then" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose.yml.db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="db" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
+        <settings />
       </deployment>
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Docker.docker-compose.yml.db: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-      <item itemvalue="JUnit.AdminTest.given_product_name_when_it_exists_then_accept" />
+      <item itemvalue="JUnit.AdminTest.given_client_data_when_its_into_sistem_then_its_saved" />
+      <item itemvalue="JUnit.ValidacionTest" />
+      <item itemvalue="JUnit.ValidacionTest.give_cedula_when_validate_correct_then" />
       <item itemvalue="JUnit.AdminTest.given_product_when_it_exists_then_accept" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.db: Compose Deployment" />
+        <item itemvalue="JUnit.ValidacionTest" />
         <item itemvalue="JUnit.AdminTest.given_product_when_it_exists_then_accept" />
-        <item itemvalue="JUnit.AdminTest.given_product_name_when_it_exists_then_accept" />
+        <item itemvalue="JUnit.AdminTest.given_client_data_when_its_into_sistem_then_its_saved" />
+        <item itemvalue="JUnit.ValidacionTest.give_cedula_when_validate_correct_then" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +211,8 @@
       <workItem from="1687807356050" duration="5162000" />
       <workItem from="1687820223654" duration="2737000" />
       <workItem from="1687827240863" duration="13146000" />
-      <workItem from="1687914790089" duration="7159000" />
+      <workItem from="1687914790089" duration="12169000" />
+      <workItem from="1687930795419" duration="1765000" />
     </task>
     <task id="LOCAL-00001" summary="Validaci[on y registro de cliente">
       <created>1687812519271</created>
@@ -256,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687922348973</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Database Server">
+      <created>1687922408417</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1687922408417</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

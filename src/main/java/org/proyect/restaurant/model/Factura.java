@@ -4,11 +4,9 @@ package org.proyect.restaurant.model;
 public class Factura {
 
     private double total;
-    private Cliente customer;
-    private Pedido pedido;
-    private OrdenPedidos pedidos;
-    private int numFactura;
-    
+    private final Cliente customer;
+    private final Pedido pedido;
+
     public  Factura(Cliente client, Pedido pedido) {
         this.customer = client;
         this.pedido = pedido;

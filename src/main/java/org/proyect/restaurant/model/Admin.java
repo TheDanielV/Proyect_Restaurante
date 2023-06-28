@@ -7,27 +7,17 @@ import org.proyect.restaurant.conection.*;
 
 public class Admin {
     private Cliente cliente;
-    private Pedido pedido = new Pedido();
-    private Factura factur;
-    private Producto producto = new Producto();
-    private Validacion validador;
-    private OrdenPedidos orden = new OrdenPedidos();
-    private DbConection conection = new DbConection();
+    private final Pedido pedido = new Pedido();
+    private final Producto producto = new Producto();
+    private final OrdenPedidos orden = new OrdenPedidos();
+    private final DbConection conection = new DbConection();
 
     public Admin() {
         conection.begginConection();
     }
 
-    public void setClient(Cliente client) {
-        this.cliente = client;
-    }
-
     public Cliente getCliente() {
         return cliente;
-    }
-
-    public Pedido getPedido() {
-        return pedido;
     }
 
     public DbConection getConection() {
@@ -37,8 +27,8 @@ public class Admin {
     public void registrarCliente() throws SQLException {
         Cliente client = new Cliente();
         String id = "";
-        String nombre = "", apellido = "";
-        String direccion = "", correo = "", telefono = "";
+        String nombre, apellido;
+        String direccion, correo, telefono;
         //Registro del número de cédula
 
         boolean flag = true;
@@ -47,7 +37,7 @@ public class Admin {
             Scanner cedulaIn = new Scanner(System.in);
             id = cedulaIn.nextLine();
             // verificar el nombre ingresado
-            if (validador.validarCedula(id)) {
+            if (Validacion.validarCedula(id)) {
                 flag = false;
             } else {
                 System.out.println("Su número de cedula esta incorecto");
@@ -63,7 +53,7 @@ public class Admin {
                 Scanner nombreIn = new Scanner(System.in);
                 nombre = nombreIn.nextLine();
                 // verificar el nombre ingresado
-                if (validador.validarNombre(nombre)) {
+                if (Validacion.validarNombre(nombre)) {
                     client.setNombre(nombre);
                     flag = false;
                 } else {
@@ -73,11 +63,11 @@ public class Admin {
             flag = true;
             // Registro del apellido del cliente
             while (flag) {
-                System.out.print("Apellido del empleado: ");
+                System.out.print("Apellido del Cliente: ");
                 Scanner entradaApellido = new Scanner(System.in);
                 apellido = entradaApellido.nextLine();
                 // Verificación de el apellido, si es ingresado correctamente
-                if (validador.validarApellido(apellido)) {
+                if (Validacion.validarApellido(apellido)) {
                     client.setApellido(apellido);
                     flag = false;
                 } else {
@@ -93,7 +83,7 @@ public class Admin {
                 Scanner entradaDireccion = new Scanner(System.in);
                 direccion = entradaDireccion.nextLine();
                 //Validación de la dirección del cliente
-                if (validador.validarDireccion(direccion)) {
+                if (Validacion.validarDireccion(direccion)) {
                     client.setDireccion(direccion);
                     flag = false;
                 } else {
@@ -107,7 +97,7 @@ public class Admin {
                 Scanner entradaCorreo = new Scanner(System.in);
                 correo = entradaCorreo.nextLine();
                 //Validación del correo electrónico
-                if (validador.validarCorreoElectronico(correo)) {
+                if (Validacion.validarCorreoElectronico(correo)) {
                     client.setCorreo(correo);
                     flag = false;
                 } else {
@@ -121,7 +111,7 @@ public class Admin {
                 Scanner entradaTelefono = new Scanner(System.in);
                 telefono = entradaTelefono.nextLine();
                 //Validar teléfono del cliente
-                if (validador.validarTelefono(telefono)) {
+                if (Validacion.validarTelefono(telefono)) {
                     client.setTelefono(telefono);
                     flag = false;
                 } else {
@@ -134,36 +124,9 @@ public class Admin {
             this.cliente = client;
 
             conection.registroCliente(cliente);
-           /* File fichero = null;
-            FileWriter fw = null;
-            PrintWriter pw = null;
-            String cadena = "";
-            try {
-                fichero = new File("registroEmpleados2.txt");
-                fw = new FileWriter(fichero, true);
-                pw = new PrintWriter(fw);
-                cadena += client.getCedula() + ",";
-                cadena += client.getNombre() + ",";
-                cadena += client.getApellido() + ",";
-                cadena += client.getDireccion() + ",";
-                cadena += client.getCorreo() + ",";
-                cadena += client.getTelefono();
-                String cadena2 = cadena;
-                pw.println(cadena2);
-            } catch (Exception e) {
-                e.printStackTrace();
-            } finally {
-                try {
-                    if (fw != null) {
-                        fw.close();
-                    }
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }*/
         }else {
 
-            this.cliente = conection.getCliente(id);;
+            this.cliente = conection.getCliente(id);
         }
     }
 
@@ -171,7 +134,7 @@ public class Admin {
 
 
     public void emitirDocumentos(){
-        factur = new Factura(cliente, pedido);
+        Factura factur = new Factura(cliente, pedido);
         factur.emitirFactura();
         orden.emitirOrden(pedido);
 
@@ -191,6 +154,7 @@ public class Admin {
             if (pedido.agregarPedido(product,cantidad, conection, cliente.getCedula())){
                 System.out.print("Agregar otro prodducto? s/n");
                 if (in.nextLine().equals("s")){
+
                 }else{
                     flag = false;
                     pedido.setId(conection.getPedidoId()+1);
@@ -210,7 +174,7 @@ public class Admin {
         conection.registroProducto(producto);
     }
 
-    public void eliminarProducto(int i) throws SQLException {
+    public void eliminarProducto(int i) {
         conection.removeProducto(i);
     }
 }
