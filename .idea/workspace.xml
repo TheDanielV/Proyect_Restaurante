@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50fdefd2-6c09-42e0-974c-e9a21b07c75d" name="Changes" comment="BdConection actualizado&#10;Pedido - actualizado&#10;Admin - agrega el pedido a la db">
+    <list default="true" id="50fdefd2-6c09-42e0-974c-e9a21b07c75d" name="Changes" comment="Validation test">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e6772950-e01e-4d1a-bc11-90f4d9c76f1b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e6772950-e01e-4d1a-bc11-90f4d9c76f1b.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/conection/DbConection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/conection/DbConection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Factura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Factura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/OrdenPedidos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/OrdenPedidos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Pedido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/proyect/restaurant/model/Producto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,16 +66,67 @@
       <recent name="C:\Users\danie\OneDrive\Documentos\Metodologías ágiles\Proyect_Restaurante\src\main\java\org\proyect\restaurant\model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ValidacionTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.proyect.restaurant.main.Main" />
+  <component name="RunManager" selected="JUnit.AdminTest.given_product_when_it_exists_then_accept">
+    <configuration name="AdminTest.given_client_data_when_its_into_sistem_then_its_saved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proyect-restaurant" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.proyect.restaurant.main.*" />
+          <option name="PATTERN" value="org.proyect.restaurant.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="org.proyect.restaurant.model" />
+      <option name="MAIN_CLASS_NAME" value="org.proyect.restaurant.model.AdminTest" />
+      <option name="METHOD_NAME" value="given_client_data_when_its_into_sistem_then_its_saved" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminTest.given_product_name_when_it_exists_then_accept" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proyect-restaurant" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.proyect.restaurant.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.proyect.restaurant.model" />
+      <option name="MAIN_CLASS_NAME" value="org.proyect.restaurant.model.AdminTest" />
+      <option name="METHOD_NAME" value="given_product_name_when_it_exists_then_accept" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminTest.given_product_when_it_exists_then_accept" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proyect-restaurant" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.proyect.restaurant.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.proyect.restaurant.model" />
+      <option name="MAIN_CLASS_NAME" value="org.proyect.restaurant.model.AdminTest" />
+      <option name="METHOD_NAME" value="given_product_when_it_exists_then_accept" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminTest.testRegistrarCliente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proyect-restaurant" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.proyect.restaurant.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.proyect.restaurant.model" />
+      <option name="MAIN_CLASS_NAME" value="org.proyect.restaurant.model.AdminTest" />
+      <option name="METHOD_NAME" value="testRegistrarCliente" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -100,8 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AdminTest.given_product_when_it_exists_then_accept" />
+        <item itemvalue="JUnit.AdminTest.given_product_name_when_it_exists_then_accept" />
+        <item itemvalue="JUnit.AdminTest.given_client_data_when_its_into_sistem_then_its_saved" />
+        <item itemvalue="JUnit.AdminTest.testRegistrarCliente" />
         <item itemvalue="JUnit.ValidacionTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -117,6 +168,7 @@
       <workItem from="1687807356050" duration="5162000" />
       <workItem from="1687820223654" duration="2737000" />
       <workItem from="1687827240863" duration="13146000" />
+      <workItem from="1687914790089" duration="3014000" />
     </task>
     <task id="LOCAL-00001" summary="Validaci[on y registro de cliente">
       <created>1687812519271</created>
@@ -166,5 +218,20 @@
     <MESSAGE value="Product db" />
     <MESSAGE value="BdConection actualizado&#10;Pedido - actualizado&#10;Admin - agrega el pedido a la db" />
     <option name="LAST_COMMIT_MESSAGE" value="BdConection actualizado&#10;Pedido - actualizado&#10;Admin - agrega el pedido a la db" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/org/proyect/restaurant/model/AdminTest.java</url>
+          <line>30</line>
+          <properties class="org.proyect.restaurant.model.AdminTest" method="given_product_when_it_exists_then_accept">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

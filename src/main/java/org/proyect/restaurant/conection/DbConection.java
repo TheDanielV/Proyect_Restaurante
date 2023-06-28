@@ -189,5 +189,19 @@ public class DbConection {
     }
 
 
+    public void removeProducto(int i) throws SQLException {
+        String consulta = "DELETE FROM producto WHERE id = ?";
+
+        try (PreparedStatement statement = connection.prepareStatement(consulta)) {
+
+            statement.setInt(1, i);
+            statement.executeUpdate();
+            System.out.println("Producto eliminado exitosamente.");
+
+        } catch (SQLException e) {
+            System.out.println("Error al eliminar el producto: " + e.getMessage());
+        }
+
+    }
 }
 

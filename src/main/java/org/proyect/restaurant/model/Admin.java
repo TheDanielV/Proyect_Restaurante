@@ -22,6 +22,13 @@ public class Admin {
         this.cliente = client;
     }
 
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public Pedido getPedido() {
+        return pedido;
+    }
 
     public void registrarCliente() throws SQLException {
         Cliente client = new Cliente();
@@ -197,5 +204,9 @@ public class Admin {
         producto.setNombre(nombre);
         producto.setPrecio(precio);
         conection.registroProducto(producto);
+    }
+
+    public void eliminarProducto(int i) throws SQLException {
+        conection.removeProducto(i);
     }
 }
