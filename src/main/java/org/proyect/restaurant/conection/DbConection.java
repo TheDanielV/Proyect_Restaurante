@@ -10,9 +10,9 @@ public class DbConection {
     public void begginConection(){
 
         try {
-            String url = "jdbc:mysql://172.23.0.3:3306/bdrestaurante";
-            String username = "root";
-            String password = "root";
+            String url = "jdbc:mysql://sql10.freemysqlhosting.net:3306/sql10629153";
+            String username = "sql10629153";
+            String password = "SsFJQf3cqH";
             connection = DriverManager.getConnection(url, username, password);
             System.out.println("Conexión exitosa");
         } catch (SQLException e) {
